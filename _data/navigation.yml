@@ -50,3 +50,12 @@ header:
       tr      : &TR       Hakkında
       # @end locale config
     url: /about.html
+
+  - title: Bio
+    url: /bio.html
+
+  - title: CCV
+    url: https://github.com/cggos/ccv
+  
+  - title: CGABC
+    url: https://cgabc.xyz

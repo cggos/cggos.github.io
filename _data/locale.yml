@@ -14,12 +14,15 @@ en: &EN
   ARTICLE_LIST_DATE_FORMAT: "%b %d"
   STATISTICS              : "[POST_COUNT] post articles, [PAGE_COUNT] pages."
   LICENSE_ANNOUNCE        : "This work is licensed under a [LICENSE] license."
+  REWARD_TEXT             : "If this article is helpful to you, pls scan the QR code below to give a reward. Thanks for your support."
+  REWARD_WECHAT           : "WeChatPay"
+  REWARD_ALIPAY           : "AliPay"
   POST_ON_GITHUB          : "Edit on Github"
   FOLLOW_ME               : "Follow me on [NAME]."
   FOLLOW_US               : "Follow us on [NAME]."
   EMAIL_ME                : "Send me an Email."
   EMAIL_US                : "Send us an Email."
-  COPYRIGHT_DATES         : "2021"
+  COPYRIGHT_DATES         : "2025"
 
 en-GB:
   <<: *EN

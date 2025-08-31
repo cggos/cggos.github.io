@@ -17,45 +17,49 @@
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : # does not include hostname
-title   : Your Site Title
+highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url     : "https://spatial-ai.net" # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl : "" # does not include hostname
+title   : CG-SpatialAI
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  "Computer Vision | SLAM | MSF | Robotics | XR | HPC"
 
 
 ## => Language and Timezone
 ##############################
-lang: # the language of your site, default as "en"
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+lang: en # the language of your site, default as "en"
+timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Your Name
-  url       :
-  avatar    : # path or url of avatar image (square)
-  bio       : I am an amazing person.
-  email     :
-  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  name      : Gavin Gao
+  url       : https://cggos.github.io
+  avatar    : /assets/images/avatar/ghc.jpg # path or url of avatar image (square)
+  bio       : 'CVer, SLAMer, Engineer, Coder, Traveller, Hiking, HAM <br> 要么旅行(户外)，要么读书(SpatialAI)，身体和灵魂总有一个要在路上'
+  email     : cggos@outlook.com
+  facebook  : gavin.gao.xyz # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  twitter   : GavnGao # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  zhihu     : gaohongchen01 # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  linkedin  : CGABC # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : cggos # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+  credly    : cgabc # https://www.credly.com/users/cgabc
+  orcid     : 0000-0003-2841-6617 # https://orcid.org/0000-0003-2841-6617
+  researchgate: Hongchen-Gao # https://www.researchgate.net/profile/Hongchen-Gao
+  reddit    : # https://www.reddit.com/user/cggos
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: cggos/cggos.github.io
 repository_tree: master
 
 
@@ -84,14 +88,14 @@ toc:
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: # false (default), true
+mathjax: true # false (default), true
 mathjax_autoNumber: # false (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: true # false (default), true
 
 ## Chart
-chart: # false (default), true
+chart: true # false (default), true
 
 
 ## => Paginate
@@ -108,37 +112,37 @@ sources: # bootcdn (default), unpkg
 ## => Sharing
 ##############################
 sharing:
-  provider: false # false (default), "addtoany", "addthis", "custom"
+  provider: addthis # false (default), "addtoany", "addthis", "custom"
 
   ## AddThis
   addthis:
-    id: # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+    id: ra-5fcbaf4231fa26eb # AddThis pubid, e.g. ra-5xxxxxxxxxxx
 
 
 ## => Comments
 ##############################
 comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: valine # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
-    shortname: # the Disqus shortname for the site
+    shortname: cggos # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : 90a7d5844c2ff26831de # GitHub Application Client ID
+    clientSecret: db11e2208a15b1af707cb9b5be0e631ec3144648 # GitHub Application Client Secret
+    repository  : cggos.github.io # GitHub repo
+    owner       : cggos # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+      cggos # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
   valine:
-    app_id      : # LeanCloud App id
-    app_key     : # LeanCloud App key
+    app_id      : IkQndb0CrQYLVgEeUT61Y5Bl-gzGzoHsz # LeanCloud App id
+    app_key     : Fx7lMMb7RDbmcaR8GAe5PzSr # LeanCloud App key
     placeholder : # Prompt information
     visitor     : # false (default)
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
@@ -147,13 +151,13 @@ comments:
 ## => Pageview
 ##############################
 pageview:
-  provider: false # false (default), "leancloud", "custom"
+  provider: leancloud # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+    app_id    : IkQndb0CrQYLVgEeUT61Y5Bl-gzGzoHsz # LeanCloud App id
+    app_key   : Fx7lMMb7RDbmcaR8GAe5PzSr # LeanCloud App key
+    app_class : GHPageBlog # LeanCloud App class
 
 
 ## => Search
@@ -169,11 +173,11 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
+    tracking_id : UA-224172194-1 # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
@@ -181,7 +185,8 @@ analytics:
 ##############################
 markdown    : kramdown
 highlighter : rouge
-permalink   : date
+# permalink   : date
+permalink   : /:categories/:title.html
 
 exclude:
   - CHANGELOG.md
@@ -212,6 +217,7 @@ defaults:
       aside:
         toc: true
       show_edit_on_github: true
+      show_reward_pay: true
       show_subscribe: true
       pageview: true
 
