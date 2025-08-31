@@ -4,6 +4,8 @@
 source "https://gems.ruby-china.com/"
 
 # gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 232", group: :jekyll_plugins
+
 gemspec
 gem "kramdown-parser-gfm"
-gem "jekyll-scholar", group: :jekyll_plugins
+# gem "jekyll-scholar", group: :jekyll_plugins
